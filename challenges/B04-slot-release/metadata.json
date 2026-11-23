@@ -1,0 +1,6 @@
+{
+  "category": "bugfix",
+  "difficulty": "easy",
+  "id": "B04-slot-release",
+  "title": "Fix slot release at the window boundary"
+}

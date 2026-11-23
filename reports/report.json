@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "mode": "mock",
+  "model": "offline-fixture",
+  "overall": {
+    "passed": 7,
+    "total": 12,
+    "pass_rate": 0.5833
+  },
+  "by_category": {
+    "algorithm": {
+      "passed": 2,
+      "total": 4,
+      "pass_rate": 0.5
+    },
+    "bugfix": {
+      "passed": 2,
+      "total": 4,
+      "pass_rate": 0.5
+    },
+    "practical": {
+      "passed": 3,
+      "total": 4,
+      "pass_rate": 0.75
+    }
+  },
+  "by_difficulty": {
+    "easy": {
+      "passed": 3,
+      "total": 5,
+      "pass_rate": 0.6
+    },
+    "hard": {
+      "passed": 1,
+      "total": 2,
+      "pass_rate": 0.5
+    },
+    "medium": {
+      "passed": 3,
+      "total": 5,
+      "pass_rate": 0.6
+    }
+  },
+  "status_counts": {
+    "fail": 5,
+    "pass": 7
+  },
+  "results": [
+    {
+      "id": "A01-booking-gaps",
+      "title": "Find free booking windows",
+      "category": "algorithm",
+      "difficulty": "easy",
+      "status": "pass",
+      "detail": "",
+      "duration_seconds": 0.317
+    },
+    {
+      "id": "A02-weighted-rank",
+      "title": "Find a weighted reading by rank",
+      "category": "algorithm",
+      "difficulty": "easy",
+      "status": "fail",
+      "detail": "FAILED tests/test_a02.py::test_sorts_values_and_uses_one_based_rank — assert 8 == 5",
+      "duration_seconds": 0.316
+    },
+    {
+      "id": "A03-build-waves",
+      "title": "Schedule dependency waves",
+      "category": "algorithm",
+      "difficulty": "medium",
+      "status": "pass",
+      "detail": "",
+      "duration_seconds": 0.316
+    },
+    {
+      "id": "A04-coupon-route",
+      "title": "Find the cheapest route with a coupon",
+      "category": "algorithm",
+      "difficulty": "hard",
+      "status": "fail",
+      "detail": "FAILED tests/test_a04.py::test_coupon_can_be_used_before_the_last_edge — AssertionError: assert 4 == 2",
+      "duration_seconds": 0.316
+    },
+    {
+      "id": "B01-office-day",
+      "title": "Fix office-day revenue rollover",
+      "category": "bugfix",
+      "difficulty": "easy",
+      "status": "pass",
+      "detail": "",
+      "duration_seconds": 0.316
+    },
+    {
+      "id": "B02-event-cursor",
+      "title": "Fix cursor pagination across tied timestamps",
+      "category": "bugfix",
+      "difficulty": "medium",
+      "status": "fail",
+      "detail": "FAILED tests/test_b02.py::test_equal_timestamp_uses_id_tie_breaker — AssertionError: assert ([(2, 'c')], None) == ([(1, 'b')], (1, 'b'))",
+      "duration_seconds": 0.316
+    },
+    {
+      "id": "B03-discount-share",
+      "title": "Fix cent rounding in discount allocation",
+      "category": "bugfix",
+      "difficulty": "medium",
+      "status": "pass",
+      "detail": "",
+      "duration_seconds": 0.316
+    },
+    {
+      "id": "B04-slot-release",
+      "title": "Fix slot release at the window boundary",
+      "category": "bugfix",
+      "difficulty": "easy",
+      "status": "fail",
+      "detail": "FAILED tests/test_b04.py::test_releases_at_exact_expiry — assert [True, True, False, False] == [True, True, True, False]",
+      "duration_seconds": 0.317
+    },
+    {
+      "id": "R01-stock-ledger",
+      "title": "Reconcile an inventory movement ledger",
+      "category": "practical",
+      "difficulty": "medium",
+      "status": "pass",
+      "detail": "",
+      "duration_seconds": 0.316
+    },
+    {
+      "id": "R02-invoice-csv",
+      "title": "Summarize posted invoice totals from CSV",
+      "category": "practical",
+      "difficulty": "medium",
+      "status": "fail",
+      "detail": "FAILED tests/test_r02.py::test_reads_quoted_commas_as_part_of_invoice_id — ValueError: invalid literal for int() with base 10: ' usd '",
+      "duration_seconds": 0.316
+    },
+    {
+      "id": "R03-parcel-events",
+      "title": "Reduce parcel events to latest state",
+      "category": "practical",
+      "difficulty": "hard",
+      "status": "pass",
+      "detail": "",
+      "duration_seconds": 0.316
+    },
+    {
+      "id": "R04-release-manifest",
+      "title": "Diff release manifests",
+      "category": "practical",
+      "difficulty": "easy",
+      "status": "pass",
+      "detail": "",
+      "duration_seconds": 0.316
+    }
+  ]
+}

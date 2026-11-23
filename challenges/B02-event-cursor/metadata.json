@@ -1,0 +1,6 @@
+{
+  "category": "bugfix",
+  "difficulty": "medium",
+  "id": "B02-event-cursor",
+  "title": "Fix cursor pagination across tied timestamps"
+}

@@ -1,0 +1,6 @@
+{
+  "category": "bugfix",
+  "difficulty": "medium",
+  "id": "B03-discount-share",
+  "title": "Fix cent rounding in discount allocation"
+}
